@@ -207,6 +207,8 @@ namespace MapsExchange
             DrawAtlasMaps();
 
             var ingameState = GameController.Game.IngameState;
+
+            /*
             var stash = ingameState.ServerData.StashPanel;
             if (stash.IsVisible)
             {
@@ -234,14 +236,16 @@ namespace MapsExchange
 
                     if (visibleStash.InvType == PoeHUD.Models.Enums.InventoryType.MapStash)
                         UpdateStashMapData(visibleStash.InventoryUiElement.AsObject<MapStashTabElement>(), updateMapsCount);
+                        
                 }
             }
             else
             {
                 CurrentStashAddr = -1;
             }
+            */
         }
-
+        
         private bool LastVisible;
         private List<WorldArea> CompletedMaps;
         private List<WorldArea> BonusCompletedMaps;
